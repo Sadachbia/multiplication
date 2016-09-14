@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- index.html -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Kertotaulupeli</title>
+        <script type="text/javascript" src="scripts/script.js"> </script>
+        <link rel="stylesheet" href="css/basic.css"/>
+
+    </head>
+    <body onload="initialize()">
+        <div id="content">
+            <div id="left">
+                <nav>
+                    <ul>
+                        <li><a class="active" href="index.html">Kertotaulupeli</a></li>
+                        <li><a href="timestable.html">Kertotaulut</a></li>
+                    </ul>
+                </nav>
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px"
+                             src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                             alt="Valid CSS!" />
+                    </a>
+                </p>
+            </div>
+
+            <div id="right">
+                <h1>Kertotaulupeli</h1>
+
+                <div id="quote">
+                    <p>"Kukaan, joka ei ole tehnyt virhettä, ei ole yrittänyt mitään uutta."</p>
+                </div>
+
+                <div id="author">
+                    <p>- Albert Einstein</p>
+                </div>
+                
+                <div id="playground">  
+                    <h3>Laske</h3>
+                    <div id="selection">
+                        <p> Valitse kertotaulu:
+                            <select id="exercise">
+                                <option value="1"  onclick="setMultiplicant(value)" selected="selected" >1</option>
+                                <option value="2"  onclick="setMultiplicant(value)"                     >2</option>
+                                <option value="3"  onclick="setMultiplicant(value)"                     >3</option>
+                                <option value="4"  onclick="setMultiplicant(value)"                     >4</option>
+                                <option value="5"  onclick="setMultiplicant(value)"                     >5</option>
+                                <option value="6"  onclick="setMultiplicant(value)"                     >6</option>
+                                <option value="7"  onclick="setMultiplicant(value)"                     >7</option>
+                                <option value="8"  onclick="setMultiplicant(value)"                     >8</option>
+                                <option value="9"  onclick="setMultiplicant(value)"                     >9</option>
+                                <option value="10" onclick="setMultiplicant(value)"                     >10</option>
+                            </select>
+                            <br>
+                        </p>
+                    </div>
+
+                    <div>
+                        <p id="expression"> </p>
+                        <p>
+                            <input type="text"
+                                   id="getAnswer"
+                                   maxlength="3"
+                                   onkeypress="if ((event.which == 13) || (event.keyCode == 13)){
+                                                   btnSend.click(); }"
+                            />
+                            <br>
+                        </p>
+
+                        <input type="button" id="btnSend"  class="button" value="Lähetä vastaus" onclick="checkResult()">
+                        <input type="button" id="btnClear" class="button" value="Tyhjennä"       onclick="clearGame()">
+
+                    </div>
+                </div>
+     
+                <div id="infoModal" class="modal">
+                    <div class="modalContent">
+                        <p id="info"> </p>
+                    </div>
+                </div>
+                    
+                <div id="gradesAndStats">
+                    <table id="grades"> </table>
+                    <div id="stats">
+                        <p id="gameStats"></p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="footer">
+                <footer>
+                    <hr>
+                    <address>Copyright &copy; 2016 Marika Koivisto</address>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
