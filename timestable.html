@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Kertotaulut</title>
+        <script type="text/javascript" src="scripts/timestable.js"> </script>
+        <link rel="stylesheet" href="css/basic.css" />
+
+    </head>
+    <body onload ="createRowsAndCellsToTable()">
+        <div id="content" class="pageblock">
+            <div id="left">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">                    Kertotaulupeli</a></li>
+                        <li><a href="timesable.html" class="active"> Kertotaulut</a></li>
+                    </ul>
+                </nav>
+            </div> 
+
+            <div id="right">       
+                <h1>Kertotaulut</h1>
+                
+                <div id="quote">
+                    <p>"Pöytä, tuoli, hedelmäkulho ja viulu; mitä muuta ihminen tarvitsee ollakseen onnellinen?"</p>
+                </div>
+
+                <div id="author">
+                    <p>- Albert Einstein</p>
+                </div>
+                
+                <div id="playground"> 
+                    <h3> Piilota vastaukset ja testaa tiedätkö tulon </h3>
+                    <p> Vastauksen saat näkyviin ja uudelleen piiloon klikkaamalla tuloa.</p>
+                    
+                    <div id="timeTables">
+                        <table id="tables"> </table>
+	                    <div id="stats">
+	                        <p id="gameStats"></p>
+                        </div>
+		            </div> 
+
+                    <input type="button" id="btnShow" class="button" value="Näytä kaikki"   onclick="showCells('visible')">
+	                <input type="button" id="btnHide" class="button" value="Piilota kaikki" onclick="showCells('hidden')"> 
+                </div> 
+            </div>
+
+            <div id="footer">
+		        <footer>
+		            <hr>
+		            <address>Copyright &copy; 2016 Marika Koivisto</address>
+		        </footer>
+            </div>
+        </div>
+    </body>
+</html>
