@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+/* Basic page */
+html, body {
+    height: 99%;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Book Antiqua", serif;
+}
+
+/* Body */
+body {
+    background-image: url("../pictures/children.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: black;
+    font-size: 100%;
+}
+
+/* Content */
+#content {
+    width:60%;
+    margin:10%;
+    padding:1%;
+    text-align: center;
+    background-color: #f1f1f1;
+    
+}
+
+/* Left side of content */
+#left {
+    float: left;
+    padding-right: 1%;
+    width: 22%;
+}
+
+/* Navigation list */
+nav ul {
+    padding: 1%;
+    list-style-type: none;
+    width: 130px;
+    border-style: none;
+    margin-top: 20%;
+}
+
+/* Navigation list item */
+nav ul li {
+    border-style: none;
+}
+
+/* Navigation list item a */
+nav ul li a {
+    color: black;
+    background-color: #e6e6e6;
+    padding: 8%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Navigation list item hover */
+nav ul li a:hover {
+    color: white;
+    background-color: #6e6e6e;
+}
+
+/* Active list item */
+nav ul li a.active {
+    color:white;
+    background-color: #555;
+}
+
+/* Right part of content */
+#right {
+    overflow: auto;
+    margin-right: 2%;
+}
+
+/* Quote and author's name */
+#quote, #author {
+    color: #610b5e;
+    text-align: center;
+}
+
+/* Quote */
+#quote {
+    border: none;
+    border-left: none;
+    margin-left: 0;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Author */
+#author {
+    font-weight: 100;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+/* Playground */
+#playground {
+    background-color: #f2e0f7;
+}
+
+/* Paragraph in playground */
+#playground p {
+    font-size: 0.80em;
+}
+
+/* Multiply's expression */
+#expression {
+    font-size: 120%;
+}
+
+/* Button */
+.button {
+    background-color: #555;
+    color:white;
+    padding: 2% 4%;
+    cursor: pointer;
+    width: 15em;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content/Box */
+.modalContent {
+    background-color: #f1f1f1;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align:center;
+}
+
+/* Table */
+table {
+    width: 100%;
+    font-size: 0.80em;
+}
+
+/* Table cells */
+table td, th {
+    border: thin solid #ddd;
+    text-align: center;
+    padding: 0%;
+}
+
+/* Table of gradesAndStats */
+#gradesAndStats {
+    font-size: 0.80em;
+}
+
+/* Even rows in gradesAndStats table */
+#gradesAndStats tr:nth-child(even) {
+    font-weight: bold;
+}
+
+/* Cells of gradesAndStats table */
+#gradesAndStats th, td {
+    padding: 1%;
+}
+
+/* Page footer */
+footer {
+    clear: both;
+    width: 100%;
+    text-align: left;
+    font-size: 80%;
+}
