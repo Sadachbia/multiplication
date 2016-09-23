@@ -6,7 +6,8 @@ const MAX_COUNT_OF_ROWS = 11;
  * This function creates timestable.
  */
 function createRowsAndCellsToTable() {
-    var i, j = 0;
+    var i = 0;
+    var j = 0;
     var row, cell, cellText, nodeText, table, node, textnode;
     
     table = document.getElementById("tables");
@@ -57,7 +58,8 @@ function hide(cell) {
  * This function shows or hides answers in the cells.
  */
 function showCells(visible) {
-    var i, j = 0;
+    var i = 0;
+    var j = 0;
     var table, nextChild;
     
     table = document.getElementById("tables");
