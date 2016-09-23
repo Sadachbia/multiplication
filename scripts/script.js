@@ -123,7 +123,8 @@ function getNextExpression() {
  * This function creates rows and cells to table which will have game results.
  */
 function createRowsAndCellsToTable() {
-    var i, j = 0;
+    var i = 0;
+    var j = 0;
     var maxCountOfCells = timesTable.totalAmountOfMultiplicants;
     var maxCountOfRows = 2;
     var row, cell, cellText, table;
